@@ -1,6 +1,6 @@
 1. **Clona el repositorio:**
    bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   git clone https://github.com/roanbo/semantic_search-1.git
    cd tu_repositorio
    
 2. Crea un entorno virtual:
