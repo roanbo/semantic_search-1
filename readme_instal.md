@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 USO
 
-5. Ejecutar el archivo main_students.py
+5. Ejecutar el archivo /src/main_students.py
 
 6. El programa solicita las palabras de búsqueda o la palabra para salir(“esc”)
    
