@@ -10,7 +10,7 @@ Instala las dependencias bash pip install -r requirements.txt
 
 USO
 
-Ejecutar el archivo main_students.py
+Ejecutar el archivo /src/main_students.py
 
 El programa solicita las palabras de búsqueda o la palabra para salir(“esc”)
 
