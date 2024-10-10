@@ -24,11 +24,12 @@ pip install -r requirements.txt
 USO
 
 5. Ejecutar el archivo /src/main_students.py
+   python /src/main_students.py
 
-6. El programa solicita las palabras de búsqueda o la palabra para salir(“esc”)
+7. El programa solicita las palabras de búsqueda o la palabra para salir(“esc”)
    
-7. Cuando escribes una palabra en el prompt el programa semántico presentara las coincidencias por pantalla
+8. Cuando escribes una palabra en el prompt el programa semántico presentara las coincidencias por pantalla
    
-8. Cuando en el prompt escribe la palabra "esc" se terminará la ejecución del programa
+9. Cuando en el prompt escribe la palabra "esc" se terminará la ejecución del programa
 
 
