@@ -12,6 +12,8 @@ USO
 
 Ejecutar el archivo /src/main_students.py
 
+python /src/main_students.py
+
 El programa solicita las palabras de búsqueda o la palabra para salir(“esc”)
 
 Cuando escribes una palabra en el prompt el programa semántico presentara las coincidencias por pantalla
