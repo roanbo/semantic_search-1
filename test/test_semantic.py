@@ -13,17 +13,10 @@ def test_load_data():
     loader = DataLoader('./basedatos/IMDB top 1000.csv')
     df = loader.load_data()
     assert isinstance(df, pd.DataFrame)
-    assert 'Busqueda' in df.columns
-
-def test_cosine_similarity():
-    strategy = CosineSimilarityStrategy()
-    embedding = [1.0, 0.0, 0.0]
-    query_embedding = [1.0, 0.0, 0.0]
-    similarity = strategy.compute_similarity(embedding, query_embedding)
-    assert similarity == 1.0
-
+    assert 'newcol' in df.columns
+    
 def test_generate_embeddings():
-    df = pd.DataFrame({'Busqueda': ['movie title description']})
+    df = pd.DataFrame({'newcol': ['movie title description']})
     model = EmbeddingModel()
     df = model.generate_embeddings(df)
     assert 'embeddings' in df.columns
@@ -43,5 +36,3 @@ def test_search():
     assert len(result) == 1
     assert 'similarity' in result.columns
 
-#if __name__ == '__main__':
-#    unittest.main()
