@@ -5,17 +5,26 @@ from abc import ABC, abstractmethod
 
 # **Principio DIP: Creación de una abstracción para la estrategia de similitud de embeddings**
 class SimilarityStrategy(ABC):
+    """
+  Creación de una abstracción para la estrategia de similitud de embeddings
+"""   
     @abstractmethod
     def compute_similarity(self, embedding, query_embedding):
         pass
 
 # **Aplicación del Patrón Strategy: Estrategia para calcular la similitud utilizando cos_sim**
 class CosineSimilarityStrategy(SimilarityStrategy):
+    """
+ Aplicación del Patrón Strategy: Estrategia para calcular la similitud utilizando cos_sim
+"""      
     def compute_similarity(self, embedding, query_embedding):
         return util.cos_sim(embedding, query_embedding).item()
 
 # **Principio SRP: Clase para cargar y preparar los datos**
 class DataLoader:
+    """
+ Principio SRP: Clase para cargar y preparar los datos
+ """     
     def __init__(self, filepath):
         self.filepath = filepath
     
@@ -32,6 +41,7 @@ class DataLoader:
 
 # **Principio SRP: Clase para manejar el modelo y generar embeddings**
 class EmbeddingModel:
+    """Principio SRP: Clase para manejar el modelo y generar embeddings"""
     def __init__(self, model_name='sentence-transformers/all-MiniLM-L6-v2'):
         self.model = SentenceTransformer(model_name)
     
